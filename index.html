@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   
+    <title>Sweet Treat Bakery</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <style>
+        .product-img {
+            width: 50%;
+            border-radius: 10px;
+            display: block;
+            margin: 10px auto;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0,1);
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+            height: 160px;
+            object-fit: cover;
+        }
+
+        .card h3{
+            margin-top: 10px;
+            font-size: 18px;
+            color: #b33;
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #333;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" data-theme="b">
+            <h1>AnA Sweet Treat Bakery</h1>
+        </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home" class="ui-btn-active">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+        <h2>Welcom to Our Bakery!</h2>
+        <p>We offer freshly baked cakes, pastries, and breads made with love</p>
+        <h3>Featured Items</h3>
+
+        <div class="card-grid">
+            <div class="card">
+                <img src="img/img/burger.jpg" alt="Cupcakes">
+                <h3>Mini Cupcakes</h3>
+                <p>Perfect bite-sized treats with colourful testing.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/img/pastry.jpg" alt="Pastry">
+                <h3>Mini Pastry</h3>
+                <p>Perfect pastry with delicious taste.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/img/cookies.jpg" alt="Cookies">
+                <h3>Mini Cookies</h3>
+                <p>Mini cookies that have a perfect bite-sized with sweet taste.</p>
+            </div>
+
+            <div class="card">
+                <img src="img/img/meat.jpg" alt="Meat">
+                <h3>Meat</h3>
+                <p>Meats that have a meaty taste like a cheese.</p>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text"> @ 2026 Sweet Treats Bakery</h4>
+    </div>
+    </div>
+
+<!-------------PRODUCTS PAGE------------------>
+<div data-role="page" id="products">
+    <div data-role="header" data-theme="b">
+        <a href="#products" data-icon="products" data-iconpos="notext"></a>
+        <h1>Our Products</h1>
+    </div>
+
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products" class="ui-btn-active">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="content">
+        <ul data-role="listview" data-inset="true">
+            <li>
+                <img src="img/img/burger.jpg" alt="Burger">
+                <h2>Spicy Burger</h2>
+                <p>Spicy burger with beef and cheese.</p>
+            </li>
+
+            <li>
+                <img src="img/img/cookies.jpg" alt="Cookies">
+                <h2>Chocolate Cookies</h2>
+                <p>Chewy Chocolate Cookies</p>
+            </li>
+
+            <li>
+                <img src="img/img/meat.jpg" alt="Meat">
+                <h2>Meat</h2>
+                <p>Chewey meaty</p>
+            </li>
+
+            <li>
+                <img src="img/img/pastry.jpg" alt="Pastry">
+                <h2>haha</h2>
+                <P>hahah</P>
+            </li>
+            </ul>
+    </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text"> @ 2026 Sweet Treats Bakery</h4>
+    </div>
+    </div>
+
+<!-----CONTACT US----->
+
+<div data-role="page" id="contact">
+    <div data-role="header" data-theme="b">
+        <a href="#contact" data-icon="Contact" data-iconpass="notext"></a>
+        <h1>Contact Us</h1>
+    </div>
+
+<div data-role="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact" class="ui-btn-active">Contact</a></li>
+        </ul>
+    </div>
+
+    <div data-role="contact">
+        <p>We'd love to hear from you! Please fill out the form below:</p>
+
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Your Name">
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="you@example.com">
+
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+
+            <input type="submit" value="Send Message" data-theme="b">
+        </form>
+    </div>
+
+    <div data-role="footer" data-theme="b" data-position="fixed">
+        <h4 class="footer-text">@ 2026 SWEET TREATS BAKERY</h4>
+    </div>
+</div>
+    
+</body>
+</html>
